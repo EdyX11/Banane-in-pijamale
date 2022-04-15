@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
-   <center>
-      <Button id="sale" mnemonicParsing="false" stylesheets="@buttonclick.css" text="Button" textFill="#ab1a1a" BorderPane.alignment="CENTER" />
-   </center>
+<BorderPane fx:id="scenePane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="674.0" prefWidth="1229.0" styleClass="env-pane" stylesheets="@background.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.bananeinpijamale.InterfaceController">
+   <bottom>
+      <AnchorPane prefHeight="203.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button id="sale" fx:id="startButton" layoutX="570.0" layoutY="102.0" mnemonicParsing="false" stylesheets="@buttonclick.css" text="Start" textFill="#ab1a1a" />
+         </children>
+      </AnchorPane>
+   </bottom>
+   <top>
+      <AnchorPane prefHeight="39.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+   </top>
 </BorderPane>
